@@ -31,3 +31,34 @@ body {
     text-wrap: balance;
   }
 }
+
+/* General scrollbar styling */
+* {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: black black; /* Firefox */
+}
+
+/* Webkit specific styling */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+  height: 5px; /* Height of the scrollbar */
+}
+
+::-webkit-scrollbar-button {
+  display: none; /* Hide scrollbar buttons */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #222; /* Background color of the track */
+  border-radius: 2px; /* Rounded corners for the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #444; /* Background color of the thumb */
+  border-radius: 2px; /* Rounded corners for the thumb */
+}
+
+/* Apply the above styles to elements with the class "custom-scroll" */
+.custom-scroll {
+  overflow-y: scroll; /* Enable scrolling for the element*/
+}
