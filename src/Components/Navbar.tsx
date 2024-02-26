@@ -13,7 +13,6 @@ const Navbar = ({ className }: { className?: string }) => {
      <Menu setActive={setActive}>
       <Link href={"#"}>
       <MenuItem setActive={setActive} active={active} item="Home">
-          Test
       </MenuItem>
       </Link>
         <MenuItem active={active} setActive={setActive} item="Courses">
