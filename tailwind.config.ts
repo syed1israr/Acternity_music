@@ -73,6 +73,6 @@ const config: Config = {
       }
     },
   },
-  plugins: [addVariablesForColors, addSvgPatterns],
+  plugins: [addVariablesForColors, addSvgPatterns,],
 };
 export default config;
